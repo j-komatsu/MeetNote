@@ -12,6 +12,18 @@ MeetNoteは、会議の議事録を簡単に管理できるアプリケーショ
 
 ---
 
+---
+
+## Wikiへの案内
+
+MeetNoteに関する詳細な資料や手順については、以下のWikiページをご覧ください。
+
+- [MeetNote 動作確認資料](https://github.com/j-komatsu/MeetNote/wiki/MeetNote-%E5%8B%95%E4%BD%9C%E7%A2%BA%E8%AA%8D%E8%B3%87%E6%96%99)
+- [MeetNote 環境構築資料（バックエンド）](https://github.com/j-komatsu/MeetNote/wiki/MeetNote-%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89%E8%B3%87%E6%96%99%EF%BC%88%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89%EF%BC%89)
+- [MeetNote 環境構築資料（フロントエンド）](https://github.com/j-komatsu/MeetNote/wiki/MeetNote-%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89%E8%B3%87%E6%96%99%EF%BC%88%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%EF%BC%89)
+
+---
+
 ## 機能一覧
 
 ### 1. **議事録一覧表示**
