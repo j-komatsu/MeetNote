@@ -1,0 +1,183 @@
+main {
+  max-width: 800px; /* 適切な幅を指定（お好みで調整） */
+  margin: 0 auto;   /* 中央寄せ */
+  padding: 1rem;
+}
+
+/* 共通スタイル */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* 明るめの背景色に変更 */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6; /* 可読性を向上 */
+}
+
+h1, h2, h3 {
+  margin: 0 0 1rem 0;
+  font-weight: bold;
+  color: #007bff; /* 見出しにアクセントカラーを追加 */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* ホバー時のスムーズな変化 */
+  margin-right: 0.5rem; /* ボタン間に余白を追加 */
+  padding: 0.4rem 0.8rem; /* ボタンサイズを少し小さく調整 */
+}
+
+button:last-child {
+  margin-right: 0; /* 最後のボタンに余白を付けない */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem; /* フォーム要素を大きめに調整 */
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff; /* 明るい背景色で視認性を向上 */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* 内側の軽い影を追加 */
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* フォーカス時の視覚的フィードバック */
+}
+
+/* モーダルスタイル */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 強めの影を追加 */
+}
+
+/* ボタン間の余白を調整 */
+li button {
+  margin-right: 0.5rem; /* ボタン間に適切な余白を追加 */
+}
+
+/* 最後のボタンに余白を追加しない */
+li button:last-child {
+  margin-right: 0;
+}
+
+/* リストアイテム（カード形式） */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.minutes-item {
+  display: flex;
+  justify-content: space-between; /* 情報とアクションボタンを左右に分ける */
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.minutes-info {
+  display: flex;
+  align-items: center;
+}
+
+.minutes-info .date {
+  font-weight: bold;
+  color: #6c757d;
+  min-width: 100px; /* 日付部分の幅を固定 */
+  margin-right: 1rem; /* 日付とタイトルの間にスペースを追加 */
+  text-align: left; /* 左寄せ */
+}
+
+.minutes-info .title {
+  flex-grow: 1; /* タイトルが残りのスペースを埋める */
+  text-align: left; /* タイトルを左寄せ */
+}
+
+
+.actions {
+  display: flex;
+  gap: 0.5rem; /* ボタン間に余白を追加 */
+}
+
+
+
+
+/* ボタンの間隔を調整 */
+li button {
+  margin-left: 0.5rem;
+}
+
+li div {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    margin-top: 0.5rem;
+  }
+}
+
+li:hover {
+  transform: translateY(-5px); /* 浮き上がる効果 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* エラーメッセージ */
+.error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background-color: #ffe6e6; /* 背景に淡い赤色を追加 */
+  padding: 0.5rem;
+  border-radius: 4px;
+}
